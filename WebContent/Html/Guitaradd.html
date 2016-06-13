@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加吉他</title>
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<h2>添加吉他</h2>
+					<hr />
+			<div class="col-xs-12 col-md-3 col-lg-3" style="padding-left: 0;">	
+			<ul class="list-group">
+			<li class="list-group-item">列表</li>
+			<a href="Guitarsearch.html" class="list-group-item">查询吉他</a>
+			<a href="Guitaradd.html" class="list-group-item">添加吉他</a>
+			<a href="Guitardelete.html" class="list-group-item">删除吉他</a>
+		</ul>
+			</div>
+			<div class="col-xs-12 col-md-9 col-lg-9">
+				<form action="../add" method="post" >
+				<br/><br/><br/>	<br/><br/><br/>	<br/><br/>
+					<h3>添加吉他</h3>
+					<table id="guitarInfo" align="left">
+						<tr>
+							<td>编号：</td>
+							<td><input type="text" name="serialNumber" id="serialNumber" placeholder="" class="form-control" /></td>
+						</tr>
+						<tr>
+							<td>制造：</td>
+							<td><select class="selector form-control" name="Builder">
+									<option value="waidi">waidi</option>
+									<option value="jiangsu">jiangsu</option>
+									<option value="henna">henna</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>类型：</td>
+							<td><input type="radio" name="Type" value="acoustic" />&nbsp;jita
+								<input type="radio" name="Type" value="electric" />&nbsp;xiaotiqin
+							</td>
+						</tr>
+						<tr>
+							<td>背部木料：</td>
+							<td><select class="selector form-control" name="BackWood">
+									<option value="Mahogany">枫木</option>
+									<option value="Maple">楠木</option>
+									<option value="Cocobolo">其他</option>
+									
+							</select></td>
+						</tr>
+						<tr>
+							<td>顶部木料：</td>
+							<td><select class="selector form-control" name="TopWood">
+									<option value="Mahogany">枫木</option>
+									<option value="Maple">楠木</option>
+									<option value="Cocobolo">其他</option>
+									
+							</select></td>
+						</tr>
+						<tr>
+							<td>弦数：</td>
+							<td><input type="text" name="numStrings" id="numStrings" placeholder="" class="form-control" /></td>
+						</tr>
+						<tr>
+							<td>型号：</td>
+							<td><input type="text" name="Model" id="Model" placeholder="" class="form-control" /></td>
+						</tr>
+						<tr>
+							<td>价格：</td>
+							<td><input type="text" name="price" id="price" placeholder="" class="form-control" /></td>
+						</tr>
+					</table>
+					<br/>
+					<button type="submit" class="btn btn-block">确认添加</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/guitarsearch.js"></script>
+</html>
